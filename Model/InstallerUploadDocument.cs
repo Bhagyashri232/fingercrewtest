@@ -37,12 +37,15 @@ namespace FingerCrew.Model
                 mobileno = dtResponse.mobileno;
 
                 var path = CommonUtilities.createDirectory(commonpath,type,doctype,mobileno);
-                var finalpath = path + "/" + param.file;
                 string input = param.file.FileName;
                 string[] parts = input.Split('.');
 
                 var filename = parts[0];
                 var extension = "." + parts[1];
+
+                var finalpath = path + "/" +filename +extension;
+
+
                 string fileName = Path.GetFileName(param.file.FileName);
                 using (FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
                 {

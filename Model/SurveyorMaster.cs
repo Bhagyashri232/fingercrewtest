@@ -79,7 +79,7 @@ namespace FingerCrew.Model
                                 disSurveyorDetails.surveyor_master_id = Convert.ToString(dr["surveyor_master_id"]);
                                 disSurveyorDetails.salutation = Convert.ToString(dr["salutation"]);
                                 disSurveyorDetails.surveyor_name = Convert.ToString(dr["surveyor_name"]);
-                                disSurveyorDetails.dob = (string)(dr["dob"]);
+                                disSurveyorDetails.dob = Convert.ToString(dr["dob"]);
                                 disSurveyorDetails.email_id = Convert.ToString(dr["email_id"]);
                                 disSurveyorDetails.mobile_no = Convert.ToString(dr["mobile_no"]);
                                 disSurveyorDetails.alt_mobile_no = Convert.ToString(dr["alt_mobile_no"]);
